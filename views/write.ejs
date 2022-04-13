@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs"); -%>
+
+<div class="write">
+    <h2><b>Write your day!</b></h2>
+    <div class="write-form">
+        <form action="/write.ejs" method="post">
+            <h6 class="write-header"><b>Title</b></h6><br>
+            <input type="text" name="titleName"><br>
+            <h6 class="write-description"><b>Description</b></h6><br>
+            <textarea name="descriptionName" cols="30" rows="10"></textarea><br>
+            <button type="submit" class="btn btn-primary" id="about-button">Add to journal
+        </form>
+    </div>
+</div>
+
+
+<%- include("partials/footer.ejs"); -%>
